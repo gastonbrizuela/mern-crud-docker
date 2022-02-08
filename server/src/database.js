@@ -24,7 +24,7 @@ const dbConnectionURL = {
 mongoose.connect(dbConnectionURL.LOCALURL, options);
 
 const db = mongoose.connection;
-
+console.log('gaston test')
 db.on('error', console.error.bind(console, `MongoDB Connection Error: ${dbConnectionURL.LOCALURL}`));
 db.once('open', () => {
   console.log('MongoDB connection successful!');
